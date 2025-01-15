@@ -20,7 +20,10 @@ public:
 
 protected:
 
+	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
+
+	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
 
 	
