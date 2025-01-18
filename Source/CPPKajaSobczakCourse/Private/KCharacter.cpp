@@ -40,5 +40,9 @@ void AKCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	PlayerInputComponent->BindAxis("MoveForward", this, &AKCharacter::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AKCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+
 }
 
